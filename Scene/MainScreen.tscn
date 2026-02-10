@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cnjf12v6pfmxt"]
+
+[ext_resource type="Script" uid="uid://dprn1snaayag6" path="res://Scene/main_screen.gd" id="1_47utw"]
+[ext_resource type="PackedScene" uid="uid://8mnmirw02dr" path="res://Scene/column_b.tscn" id="2_adin7"]
+
+[node name="Main" type="Node2D" unique_id=1803408807]
+script = ExtResource("1_47utw")
+column_scene = ExtResource("2_adin7")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=303964445]
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="Button" type="Button" parent="HBoxContainer" unique_id=1979787121]
+layout_mode = 2
+text = "add column
+"
+
+[connection signal="pressed" from="HBoxContainer/Button" to="." method="_on_button_pressed"]

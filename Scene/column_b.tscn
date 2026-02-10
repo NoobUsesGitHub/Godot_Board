@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://8mnmirw02dr"]
+
+[ext_resource type="Script" uid="uid://fyjps33px8xr" path="res://Scene/Column.gd" id="1_sno3u"]
+
+[node name="ColumnB" type="VBoxContainer" unique_id=530866828]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_sno3u")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1753913171]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer" unique_id=1173538643]
+layout_mode = 2
+text = "Title"
+
+[node name="addTextButton" type="Button" parent="HBoxContainer" unique_id=265457086]
+layout_mode = 2
+text = "+"
+
+[node name="closeButton" type="Button" parent="HBoxContainer" unique_id=968919289]
+layout_mode = 2
+text = "X"
+
+[node name="Label2" type="Label" parent="." unique_id=1116891053]
+layout_mode = 2
+text = "ssssssss"
+
+[node name="Label3" type="Label" parent="." unique_id=1818888275]
+layout_mode = 2
+text = "vsvsvas"
+
+[node name="Label4" type="Label" parent="." unique_id=1180816538]
+layout_mode = 2
+text = "vsvdsv"
+
+[node name="Label5" type="Label" parent="." unique_id=1891064096]
+layout_mode = 2
+text = "vsvsvs"
+
+[connection signal="pressed" from="HBoxContainer/addTextButton" to="." method="_on_add_text_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/closeButton" to="." method="_on_close_button_pressed"]
