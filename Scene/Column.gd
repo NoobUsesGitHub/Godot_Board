@@ -22,4 +22,4 @@ func _on_close_button_pressed() -> void:
 func _on_add_text_button_pressed() -> void:
 	var l=Label.new()
 	l.text="e"
-	add_child(l)
+	get_child(1).add_child(l)
