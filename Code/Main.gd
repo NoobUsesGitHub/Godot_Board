@@ -1,6 +1,7 @@
 extends Control
-
-
+var leftestColumn=0
+var SPACE=1
+@export var column_scene :PackedScene
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -11,15 +12,6 @@ func _process(delta: float) -> void:
 	pass
 
 
-func _on_close_button_pressed() -> void:
-	var c =get_children()
-	for i in c:
-		i.queue_free()
-	queue_free()
-	
-
-
-func _on_add_text_button_pressed() -> void:
-	var l=Label.new()
-	l.text="e"
-	get_child(1).add_child(l)
+func _on_button_pressed() -> void:
+	var newColumn = column_scene.instantiate()
+	find_child('HBoxContainer').add_child(newColumn)

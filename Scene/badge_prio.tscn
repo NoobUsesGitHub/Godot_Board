@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bjp5n6x6yn1kq"]
+
+[node name="badge_prio" type="PanelContainer" unique_id=391734235]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=10466612]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.56294703, 0.24842799, 0.32782644, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1683717435]
+layout_mode = 2
+text = "REALLY IMPORTANT"
