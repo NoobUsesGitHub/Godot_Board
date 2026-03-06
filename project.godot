@@ -11,9 +11,15 @@ config_version=5
 [application]
 
 config/name="TaskFloat"
-run/main_scene="uid://dgcfh45vce5wd"
+run/main_scene="uid://b7jd0c1vfmm6t"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/transparent=true
+window/subwindows/embed_subwindows=false
+window/per_pixel_transparency/allowed=true
 
 [physics]
 
