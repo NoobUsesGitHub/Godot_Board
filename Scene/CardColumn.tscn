@@ -1,14 +1,14 @@
 [gd_scene format=3 uid="uid://8mnmirw02dr"]
 
 [ext_resource type="Script" uid="uid://fyjps33px8xr" path="res://Code/Column.gd" id="1_sno3u"]
-[ext_resource type="PackedScene" uid="uid://cj487m0bd2s8g" path="res://Scene/card.tscn" id="2_fkmn7"]
+[ext_resource type="PackedScene" uid="uid://dd34x0vda3jhk" path="res://Scene/creator_window.tscn" id="2_ebhr4"]
 
 [node name="CardColumn" type="VBoxContainer" unique_id=530866828]
 offset_right = 78.0
 offset_bottom = 31.0
 size_flags_horizontal = 3
 script = ExtResource("1_sno3u")
-cardScene = ExtResource("2_fkmn7")
+creatorScene = ExtResource("2_ebhr4")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=113465111]
 layout_mode = 2
@@ -21,7 +21,7 @@ size_flags_horizontal = 0
 [node name="PanelContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer" unique_id=1031090323]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=1173538643]
+[node name="Title" type="Label" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=1173538643]
 layout_mode = 2
 text = "Title"
 

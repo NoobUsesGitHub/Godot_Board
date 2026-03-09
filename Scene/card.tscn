@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cj487m0bd2s8g"]
 
 [ext_resource type="PackedScene" uid="uid://bjp5n6x6yn1kq" path="res://Scene/badge.tscn" id="1_tmr17"]
+[ext_resource type="Script" uid="uid://dedchbenb0cwe" path="res://Code/card.gd" id="1_vg657"]
 
 [node name="Card" type="MarginContainer" unique_id=95162554]
 offset_right = 106.0
@@ -8,6 +9,7 @@ offset_bottom = 80.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
+script = ExtResource("1_vg657")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=615890311]
 layout_mode = 2
@@ -20,7 +22,7 @@ type = null
 layout_mode = 2
 text = "title"
 
-[node name="dec" type="Label" parent="VBoxContainer" unique_id=1485176636]
+[node name="desc" type="Label" parent="VBoxContainer" unique_id=1485176636]
 layout_mode = 2
 text = "desc desc des
 "

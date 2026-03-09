@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dd34x0vda3jhk"]
 
-[ext_resource type="Script" uid="uid://d2ayw5grtq5la" path="res://Scene/creator_window.gd" id="1_naw03"]
+[ext_resource type="Script" uid="uid://d2ayw5grtq5la" path="res://Code/creator_window.gd" id="1_naw03"]
 
 [node name="CreatorWindow" type="Control" unique_id=650055378]
 layout_mode = 3
@@ -20,6 +20,12 @@ offset_left = 328.0
 offset_top = 72.0
 offset_right = 440.0
 offset_bottom = 160.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/MarginContainer" unique_id=1208587067]
+layout_mode = 2
+
+[node name="BadgeHolder" type="VBoxContainer" parent="Panel/MarginContainer/ScrollContainer" unique_id=356530058]
+layout_mode = 2
 
 [node name="Cancel" type="Button" parent="Panel" unique_id=1540196268]
 layout_mode = 0

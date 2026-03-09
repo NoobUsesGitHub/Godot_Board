@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bjp5n6x6yn1kq"]
 
 [ext_resource type="StyleBox" uid="uid://c4jbrdwssy65f" path="res://Style/new_style_box_flat.tres" id="1_dlhbq"]
-[ext_resource type="Script" uid="uid://ynmaqjpeowg6" path="res://Scene/badge.gd" id="2_eykb0"]
+[ext_resource type="Script" uid="uid://ynmaqjpeowg6" path="res://Code/badge.gd" id="2_eykb0"]
 
 [node name="badge" type="PanelContainer" unique_id=391734235]
 offset_right = 40.0

@@ -1,7 +1,7 @@
 extends Control
 var leftestColumn=0
 var SPACE=1
-@export var column_scene :PackedScene
+@export var creatorScene :PackedScene
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -13,5 +13,6 @@ func _process(delta: float) -> void:
 
 
 func _on_button_pressed() -> void:
-	var newColumn = column_scene.instantiate()
-	find_child('HBoxContainer').add_child(newColumn)
+	var creator=creatorScene.instantiate()
+	creator.type=Globals.typeOfCreator.COLUMN
+	find_child('HBoxContainer').add_child(creator)
