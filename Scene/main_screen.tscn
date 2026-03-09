@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://kbhyn0m8xhnb"]
+
+[node name="MainScreen" type="Window" unique_id=1911392701]
+oversampling_override = 1.0

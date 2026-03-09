@@ -85,5 +85,7 @@ offset_right = 144.0
 offset_bottom = 79.0
 text = "Column Name"
 
+[connection signal="pressed" from="Panel/Cancel" to="." method="_on_cancel_pressed"]
 [connection signal="pressed" from="Panel/submit" to="." method="_on_submit_pressed"]
+[connection signal="pressed" from="Panel/Close" to="." method="_on_cancel_pressed"]
 [connection signal="text_submitted" from="Panel/LineEdit" to="." method="_on_line_edit_text_submitted"]

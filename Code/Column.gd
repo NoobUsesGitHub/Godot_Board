@@ -1,7 +1,7 @@
 extends Control
 
-@export var creatorScene : PackedScene
 var title :String
+@export var creatorScene: PackedScene
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	setTitle(title)
@@ -19,9 +19,10 @@ func _on_close_button_pressed() -> void:
 	queue_free()
 
 func setTitle(t)->void:
+	title=t
 	$MarginContainer/HBoxContainer/PanelContainer/Title.text=t
 
 func _on_add_text_button_pressed() -> void:
-	var creator=creatorScene.instatiate()
+	var creator=creatorScene.instantiate()
 	creator.type=Globals.typeOfCreator.CARD
 	add_child(creator)

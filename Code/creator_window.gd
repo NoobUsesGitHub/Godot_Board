@@ -1,8 +1,7 @@
 extends Control
 
 @export var type=Globals.typeOfCreator.CARD
-@export var cardScene:PackedScene
-@export var columnScene:PackedScene
+
 var titleForObject:String
 var textForObject:String
 
@@ -26,20 +25,22 @@ func _on_submit_pressed() -> void:
 	if type == Globals.typeOfCreator.CARD:
 		textForObject=$"Panel/Task Desc/TextEdit".text
 		createCard()
+		return
 	createColumn()
+	return
 
 func createCard():
-	var newCard=cardScene.instantiate()
-	newCard.setTitleAndDesc(titleForObject,textForObject)
-	get_parent().add_child(newCard)
+	get_parent().add_child(Factory.newCard(titleForObject,textForObject))
 	close()
 
 func createColumn():
-	var newCol=columnScene.instantiate()
-	newCol.setTitle(titleForObject)
-	get_parent().add_child(newCol)
+	get_parent().add_child(Factory.newCol(titleForObject))
 	close()
 
 func close():
 	hide()
 	queue_free()
+
+
+func _on_cancel_pressed() -> void:
+	close()

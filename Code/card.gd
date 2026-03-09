@@ -8,6 +8,8 @@ func _ready() -> void:
 	
 
 func setTitleAndDesc(t,d)->void:
+	title=t
+	desc=d
 	$VBoxContainer/title.text=title
 	$VBoxContainer/desc.text=desc
 

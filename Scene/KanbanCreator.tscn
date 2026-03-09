@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://b2uo7s00nem16"]
+
+[ext_resource type="Script" uid="uid://ctu0wbdu7v7rx" path="res://Scene/kanban_creator.gd" id="1_3jjpc"]
+
+[node name="KanbanCreator" type="Control" unique_id=2126412627]
+layout_direction = 2
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_3jjpc")
+
+[node name="Panel" type="Panel" parent="." unique_id=1693042877]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="KanbanName" type="LineEdit" parent="Panel" unique_id=1347211032]
+layout_mode = 0
+offset_left = 8.0
+offset_top = 40.0
+offset_right = 76.5
+offset_bottom = 71.0
+
+[node name="CreateKanban" type="Button" parent="Panel" unique_id=76656826]
+layout_mode = 0
+offset_right = 100.0
+offset_bottom = 31.0
+text = "add column
+"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=1583757660]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 74.0
+offset_right = 75.0
+offset_bottom = 114.0
+
+[node name="columnName" type="LineEdit" parent="Panel/VBoxContainer" unique_id=871259193]
+layout_mode = 2
+
+[connection signal="pressed" from="Panel/CreateKanban" to="." method="_on_create_kanban_pressed"]
+[connection signal="text_submitted" from="Panel/VBoxContainer/columnName" to="." method="_on_column_name_text_submitted"]

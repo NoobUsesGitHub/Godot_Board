@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="TaskFloat"
-run/main_scene="uid://b7jd0c1vfmm6t"
+run/main_scene="uid://dgcfh45vce5wd"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Globals="*uid://dbrlioqlr3r67"
+Factory="*uid://clj4amhqox4e2"
 
 [display]
 
