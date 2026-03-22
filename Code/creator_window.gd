@@ -23,7 +23,7 @@ func _on_line_edit_text_submitted(new_text: String) -> void:
 func _on_submit_pressed() -> void:
 	titleForObject=$Panel/LineEdit.text
 	if type == Globals.typeOfCreator.CARD:
-		textForObject=$"Panel/Task Desc/TextEdit".text
+		textForObject=$"Panel/TextEdit".text
 		createCard()
 		return
 	createColumn()

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://8mnmirw02dr"]
 
 [ext_resource type="Script" uid="uid://fyjps33px8xr" path="res://Code/Column.gd" id="1_sno3u"]
-[ext_resource type="PackedScene" uid="uid://dd34x0vda3jhk" path="res://Scene/creator_window.tscn" id="2_ebhr4"]
+[ext_resource type="PackedScene" uid="uid://bxg2q3a4ub7f6" path="res://Scene/creator_windowNew.tscn" id="2_ebhr4"]
 
 [node name="CardColumn" type="VBoxContainer" unique_id=530866828]
 offset_right = 78.0
@@ -10,28 +10,31 @@ size_flags_horizontal = 3
 script = ExtResource("1_sno3u")
 creatorScene = ExtResource("2_ebhr4")
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=113465111]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=2028247125]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer" unique_id=113465111]
 layout_mode = 2
 size_flags_horizontal = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1753913171]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer" unique_id=1753913171]
 layout_mode = 2
 size_flags_horizontal = 0
 
-[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer" unique_id=1031090323]
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/HBoxContainer" unique_id=1031090323]
 layout_mode = 2
 
-[node name="Title" type="Label" parent="MarginContainer/HBoxContainer/PanelContainer" unique_id=1173538643]
+[node name="Title" type="Label" parent="PanelContainer/MarginContainer/HBoxContainer/PanelContainer" unique_id=1173538643]
 layout_mode = 2
 text = "Title"
 
-[node name="addTextButton" type="Button" parent="MarginContainer/HBoxContainer" unique_id=265457086]
+[node name="addTextButton" type="Button" parent="PanelContainer/MarginContainer/HBoxContainer" unique_id=265457086]
 layout_mode = 2
 text = "+"
 
-[node name="closeButton" type="Button" parent="MarginContainer/HBoxContainer" unique_id=968919289]
+[node name="closeButton" type="Button" parent="PanelContainer/MarginContainer/HBoxContainer" unique_id=968919289]
 layout_mode = 2
 text = "X"
 
-[connection signal="pressed" from="MarginContainer/HBoxContainer/addTextButton" to="." method="_on_add_text_button_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/closeButton" to="." method="_on_close_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/HBoxContainer/addTextButton" to="." method="_on_add_text_button_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/HBoxContainer/closeButton" to="." method="_on_close_button_pressed"]

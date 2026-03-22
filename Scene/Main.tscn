@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dgcfh45vce5wd"]
 
 [ext_resource type="Script" uid="uid://1wv6wgnwuomn" path="res://Code/Main.gd" id="1_g6ejq"]
-[ext_resource type="PackedScene" uid="uid://dd34x0vda3jhk" path="res://Scene/creator_window.tscn" id="2_g6ejq"]
+[ext_resource type="PackedScene" uid="uid://bxg2q3a4ub7f6" path="res://Scene/creator_windowNew.tscn" id="2_g6ejq"]
 
 [node name="Main" type="Control" unique_id=2126412627]
 layout_direction = 2

@@ -3,26 +3,33 @@
 [ext_resource type="PackedScene" uid="uid://bjp5n6x6yn1kq" path="res://Scene/badge.tscn" id="1_tmr17"]
 [ext_resource type="Script" uid="uid://dedchbenb0cwe" path="res://Code/card.gd" id="1_vg657"]
 
+[sub_resource type="Theme" id="Theme_vg657"]
+
 [node name="Card" type="MarginContainer" unique_id=95162554]
 offset_right = 106.0
 offset_bottom = 80.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-size_flags_stretch_ratio = 5.0
+theme = SubResource("Theme_vg657")
 script = ExtResource("1_vg657")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=615890311]
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=1178785259]
 layout_mode = 2
 
-[node name="badge" parent="VBoxContainer" unique_id=1844869695 instance=ExtResource("1_tmr17")]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=615890311]
+layout_mode = 2
+
+[node name="badge" parent="PanelContainer/VBoxContainer" unique_id=1844869695 instance=ExtResource("1_tmr17")]
 layout_mode = 2
 type = null
 
-[node name="title" type="Label" parent="VBoxContainer" unique_id=1440154556]
+[node name="title" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1440154556]
 layout_mode = 2
 text = "title"
 
-[node name="desc" type="Label" parent="VBoxContainer" unique_id=1485176636]
+[node name="desc" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1485176636]
 layout_mode = 2
 text = "desc desc des
+dsadad
+dsada
 "

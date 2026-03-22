@@ -20,7 +20,7 @@ func _on_close_button_pressed() -> void:
 
 func setTitle(t)->void:
 	title=t
-	$MarginContainer/HBoxContainer/PanelContainer/Title.text=t
+	$PanelContainer/MarginContainer/HBoxContainer/PanelContainer/Title.text=t
 
 func _on_add_text_button_pressed() -> void:
 	var creator=creatorScene.instantiate()

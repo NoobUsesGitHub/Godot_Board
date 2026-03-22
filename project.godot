@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="TaskFloat"
-run/main_scene="uid://dgcfh45vce5wd"
+run/main_scene="uid://kbhyn0m8xhnb"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

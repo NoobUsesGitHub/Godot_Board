@@ -1,6 +1,8 @@
 extends Control
 var leftestColumn=0
 var SPACE=1
+var title:String
+
 @export var creatorScene :PackedScene
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -19,3 +21,6 @@ func _on_button_pressed() -> void:
 	var creator=creatorScene.instantiate()
 	creator.type=Globals.typeOfCreator.COLUMN
 	$HBoxContainer.add_child(creator)
+
+func setTitle(t):
+	get_parent().setTitle(t)
